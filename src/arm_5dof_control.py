@@ -11,17 +11,16 @@ import lss
 import lss_const as lssc
 
 # ===== SERIAL PORT CONFIG =====
-CST_LSS_Port = "/dev/ttyUSB0"      # your working port
+CST_LSS_Port = "/dev/ttyUSB0"     
 CST_LSS_Baud = lssc.LSS_DefaultBaud
 # ==============================
 
 # ===== SERVO ID MAPPING =====
-# !!! CHANGE THESE TO YOUR REAL IDS !!!
 BASE_ID     = 1   # the ID that made the base move
-SHOULDER_ID = 2   # replace with the ID that moves the shoulder
-ELBOW_ID    = 3   # replace with the ID that moves the elbow
-WRIST_ID    = 4   # replace with the ID that moves the wrist
-GRIPPER_ID  = 5   # replace with the ID that moves the gripper
+SHOULDER_ID = 2   # shoulder
+ELBOW_ID    = 3   # elbow
+WRIST_ID    = 4   # wrist
+GRIPPER_ID  = 5   # gripper
 # ============================
 
 def init_servos():
